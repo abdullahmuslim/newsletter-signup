@@ -1,0 +1,209 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+}
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop {
+  display: none;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 38px 0 19px;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 24px;
+}
+main {
+  background-color: hsl(0, 0%, 100%);
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+section div {
+  width: 87%;
+}
+section div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 9px;
+}
+section div > div:nth-child(5) {
+  margin-bottom: 44px;
+}
+section div > div img {
+  margin-right: 16px;
+}
+section div > div p {
+  line-height: 1.5em;
+}
+
+section:last-child {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20.8vh;
+}
+section:last-child > * {
+  width: 88%;
+}
+section:last-child h1 {
+  line-height: 1em;
+  margin-bottom: 22px;
+}
+section:last-child p {
+  line-height: 1.5em;
+  margin-bottom: 265px;
+}
+
+form {
+  position: relative;
+}
+
+label {
+  color: hsl(234, 29%, 20%);
+  display: block;
+  font-size: 12px;
+  margin-bottom: 9px;
+}
+
+input {
+  cursor: pointer;
+  width: 99%;
+  height: 54px;
+  border-width: 1px;
+  border-radius: 2px;
+  margin-bottom: 23px;
+}
+input::placeholder {
+  padding-left: 23px;
+  letter-spacing: 1.5px;
+}
+input:focus {
+  outline-color: hsl(231, 7%, 60%);
+}
+
+button {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  padding-block: 19px;
+  margin-bottom: 40px;
+}
+button:active {
+  background-color: hsl(4, 100%, 67%);
+}
+
+p {
+  font-size: 16px;
+}
+
+#insertedEmail {
+  font-weight: 700;
+}
+.error {
+  color: hsl(4, 100%, 67%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+}
+
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  src: url(assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+@media only screen and (min-width: 930px) {
+  body {
+    align-items: center;
+    background-color: hsl(234, 29%, 20%);
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: unset;
+  }
+  h1 {
+    font-size: 56px;
+    margin: 32px 0 19px;
+  }
+  main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 26px;
+    border-radius: 34px;
+    width: 930px;
+  }
+  section:first-child {
+    display: flex;
+    flex-direction: row;
+  }
+  section > div {
+    width: 43%;
+    margin-right: 7%;
+    margin-left: 4.5%;
+  }
+  section div > div:nth-child(5) {
+    margin-bottom: 42px;
+  }
+  section:last-child {
+    padding: 52px 40px;
+    margin: 0;
+    width: 48.5%;
+    border-radius: 35px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  section:last-child p {
+    margin-bottom: 44px;
+  }
+  section:last-child button {
+    margin-bottom: 10px;
+  }
+}
