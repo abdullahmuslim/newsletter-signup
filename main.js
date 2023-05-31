@@ -1,3 +1,5 @@
+const main = document.querySelector("main");
+
 const [signupForm, successMessage] = [...document.querySelectorAll("section")];
 
 const form = document.querySelector("form");
@@ -31,9 +33,12 @@ function openSuccessMessage(){
   insertedEmail.textContent = input.value;
   signupForm.style.display = "none";
   successMessage.style.display = "flex";
+  main.style.backgroundColor = "transparent";
+  input.value = "";
 }
 
 function closeSuccessMessage(){
   signupForm.style.display = "flex";
   successMessage.style.display = "none";
+  main.style.backgroundColor = "hsl(0, 0%, 100%)";
 }
